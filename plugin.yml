@@ -1,0 +1,21 @@
+name: GarbagePlugin
+main: de.lucagiese.trash.GarbagePlugin
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.9"]
+load: POSTWORLD
+author: lgplay aka lucagiese
+description: A Plugin to control what players throw away
+website: https://www.fiverr.com/lucagiese
+prefix: "Garbage"
+
+commands:
+  bin:
+    description: opens a inv to throw your things in
+    usage: "/bin"
+    aliases: ["trash", "dispose"]
+    
+permissions:
+    garbage.seeother:
+        description: "Allows you admins to see into other players garbage"
+        default: false
